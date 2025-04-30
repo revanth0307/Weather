@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background-color: #f0f4f7;
+    color: #333;
+  }
+  
+  header {
+    background-color: #0077b6;
+    padding: 1rem;
+    color: white;
+    text-align: center;
+  }
+  
+  header input {
+    padding: 0.5rem;
+    width: 200px;
+    margin: 0.5rem;
+  }
+  
+  button {
+    padding: 0.5rem 1rem;
+    background-color: #00b4d8;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  .card {
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.01);
+  }
+  
+  .forecast-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .forecast-grid div {
+    background-color: #caf0f8;
+    padding: 10px;
+    border-radius: 6px;
+    flex: 1;
+    text-align: center;
+  }
+
+footer {
+    background-color: #001f3f;    
+    color: #e0e7ec;               
+    padding: 3rem 1rem 1.5rem;
+    font-size: 0.95rem;
+  }
+  
+  .footer-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-section {
+    flex: 1 1 250px;
+    min-width: 220px;
+  }
+  
+  .footer-section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.75rem;
+    color: #7fdbff;
+  }
+  
+  .footer-section p {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-section a {
+    color: #7fdbff;
+    text-decoration: none;
+    border-bottom: 1px dotted #7fdbff;
+  }
+  
+  .footer-section a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 0.75rem;
+    line-height: 1.4;
+  }
+  
+  .footer-section code {
+    display: block;
+    background: rgba(255,255,255,0.1);
+    padding: 0.3rem 0.5rem;
+    border-radius: 4px;
+    word-break: break-all;
+    margin-top: 0.3rem;
+  }
+  
+  .footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.2);
+    max-width: 1200px;
+    margin: 1.5rem auto 0;
+    text-align: center;
+    padding-top: 1rem;
+    opacity: 0.8;
+    font-size: 0.85rem;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-wrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+    .footer-section {
+      max-width: 90%;
+    }
+  }
+  
+  @media (min-width: 600px) {
+    main {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    main {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  #errorMsg {
+    color: #ffb703;
+  }
+  

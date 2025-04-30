@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dynamic Weather Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🌤 Weather Dashboard</h1>
+    <input type="text" id="cityInput" placeholder="Enter city name" />
+    <button id="searchBtn">Search</button>
+    <p id="errorMsg"></p>
+  </header>
+
+  <main>
+    <section id="currentWeather" class="card">
+      <h2>Current Weather</h2>
+      <div id="weatherDetails"></div>
+    </section>
+
+    <section id="forecast" class="card">
+      <h2>5-Day Forecast</h2>
+      <div id="forecastDetails" class="forecast-grid"></div>
+    </section>
+
+    <section id="history" class="card">
+      <h2>Search History</h2>
+      <ul id="searchHistory"></ul>
+    </section>
+
+    <section id="chartSection" class="card">
+      <h2>Temperature Chart</h2>
+      <canvas id="tempChart"></canvas>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-wrapper">
+      <div class="footer-section">
+        <h3>About Us 🏢</h3>
+        <p>We believe in Trust and building long-term relationships with our customers. We follow a Plan-Do-Act-Review approach in our deliveries. We appreciate our customers for providing detailed understanding of their business processes and expectations, which help us derive optimum, workable solutions at minimal cost and easy implementation.</p>
+      </div>
+  
+      <div class="footer-section">
+        <h3>Contact Information 📱</h3>
+        <p>Website: <a href="https://gennextit.com" target="_blank" rel="noopener">GennextIT</a></p>
+      </div>
+  
+      <div class="footer-section">
+        <h3>Feedback &amp; Support 💬</h3>
+        <p>For questions about this assignment, please contact:</p>
+        <ul>
+          <li>Ashutosh — Session ID:<br><code>05ede9aecacc1dd73f663095b753f27fd7bf21c4ebfc12368ca15918e83f22a95e</code></li>
+          <li>Atul — Session ID:<br><code>05fe8ccdb87388cc8d7a1a13e919f377b6b489817fbbb9e907c79c762dd3021560</code></li>
+        </ul>
+      </div>
+    </div>
+  
+    <div class="footer-bottom">
+      <p>© 2025 GennextIT. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
